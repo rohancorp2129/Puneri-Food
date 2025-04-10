@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snacks & Chaats - Pune Food Gallery</title>
+  <meta name="description" content="Explore the best of Pune's food – Street Food, Traditional Dishes, Sweets, and more! Built by Rohan Rakh.">
+  <link rel="icon" href="./media/favicon.png" type="image/png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffefc;
+      color: #333;
+      padding-bottom: 50px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #6b4226;
+      margin-top: 20px;
+    }
+    .intro {
+      text-align: center;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .table-container {
+      overflow-x: auto;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f7b267;
+      color: white;
+    }
+    td img {
+      width: 70px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 110px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    iframe {
+      display: block;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 900px;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+    .btn-back {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #6b4226;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #4f301b;
+    }
+    td a {
+      color: #1d3557;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    td a:hover {
+      color: #6b4226;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Snacks & Chaats in Pune</h1>
+  <div class="intro">
+    <p>From crunchy bhajiyas to spicy chaats, Pune’s snack scene is flavorful and fun! Perfect for an evening break or weekend indulgence, check out these popular bites that locals swear by.</p>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Dish</th>
+          <th>Popular Area</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./media/misal.jpg" alt="Misal Pav"></td>
+          <td>Misal Pav</td>
+          <td><a href="https://www.google.com/maps?q=Tulshibaug,+Pune" target="_blank">Tulshibaug</a></td>
+          <td>Spicy curry with sprouts served with pav</td>
+          <td>₹40 - ₹60</td>
+        </tr>
+        <tr>
+          <td><img src="./media/bhel-puri.jpg" alt="Bhel Puri"></td>
+          <td>Bhel Puri</td>
+          <td><a href="https://www.google.com/maps?q=JM+Road,+Pune" target="_blank">JM Road</a></td>
+          <td>Puffed rice mix with tangy tamarind chutney</td>
+          <td>₹20 - ₹40</td>
+        </tr>
+        <tr>
+          <td><img src="./media/pattice.jpg" alt="Batata Pattice"></td>
+          <td>Batata Pattice</td>
+          <td><a href="https://www.google.com/maps?q=Kothrud,+Pune" target="_blank">Kothrud</a></td>
+          <td>Potato patty with spicy filling</td>
+          <td>₹25 - ₹35</td>
+        </tr>
+        <tr>
+          <td><img src="./media/pani-puri.jpg" alt="Pani Puri"></td>
+          <td>Pani Puri</td>
+          <td><a href="https://www.google.com/maps?q=MG+Road,+Pune" target="_blank">MG Road</a></td>
+          <td>Crispy puris filled with spicy & tangy water</td>
+          <td>₹20 - ₹30</td>
+        </tr>
+        <tr>
+          <td><img src="./media/samosa.jpg" alt="Samosa"></td>
+          <td>Samosa</td>
+          <td><a href="https://www.google.com/maps?q=Camp,+Pune" target="_blank">Camp</a></td>
+          <td>Fried pastry with potato and peas filling</td>
+          <td>₹15 - ₹25</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>🥙 Snacks Gallery</h2>
+  <div class="gallery">
+    <img src="./media/misal.jpg" alt="Misal Pav">
+    <img src="./media/bhel-puri.jpg" alt="Bhel Puri">
+    <img src="./media/pattice.jpg" alt="Batata Pattice">
+    <img src="./media/pani-puri.jpg" alt="Pani Puri">
+    <img src="./media/samosa.jpg" alt="Samosa">
+  </div>
+
+  <h2 style="text-align: center; color: #6b4226; margin-top: 40px;">📍 Chaat Corners in Pune</h2>
+<div style="display: flex; flex-direction: column; gap: 40px; padding: 30px 20px; align-items: center;">
+  <div style="display: flex; flex-wrap: wrap; max-width: 1000px; gap: 20px; justify-content: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uHGo5C4xA3w?si=OLz3Z1My0d4QZ-1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <div style="flex: 1 1 300px; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+      <img src="./media/snack-spot.jpg" alt="Chaat Corner" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
+      <h4 style="margin: 10px 0; color: #6b4226;">Tulshibaug</h4>
+      <p style="font-size: 14px;">Known for Misal Pav and crispy Batata Pattice vendors lining the streets.</p>
+    </div>
+  </div>
+</div>
+
+
+  <h2>🌟 Fun Snack Facts</h2>
+  <div style="max-width: 900px; margin: auto; padding: 20px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; font-size: 16px; line-height: 1.6;">
+      <div style="flex: 1 1 45%; background-color: #fff9f2; padding: 15px 20px; border-radius: 10px;">
+        🌶️ Misal Pav from Pune is considered one of the spiciest in India!
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff9f2; padding: 15px 20px; border-radius: 10px;">
+        🥔 Batata Pattice is often served with sweet chutney and spicy chutney – double flavor!
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff9f2; padding: 15px 20px; border-radius: 10px;">
+        💧 Pani Puri water in Pune sometimes includes mint, raw mango, and even jaggery!
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff9f2; padding: 15px 20px; border-radius: 10px;">
+        🍚 Bhel Puri is best enjoyed in the evening, near street vendors on busy roads.
+      </div>
+    </div>
+  </div>
+
+  <h2>💬 Snacky Thoughts</h2>
+  <div style="text-align: center; padding: 20px;">
+    <p style="font-size: 18px;">“Pani Puri from MG Road is unbeatable!” – <strong>Priya K.</strong></p>
+    <p style="font-size: 18px;">“I crave Batata Pattice from Kothrud every weekend.” – <strong>Aditya M.</strong></p>
+  </div>
+
+  <a href="./index.html" class="btn-back">⬅ Back to Main Page</a>
+
+</body>
+</html>

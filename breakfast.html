@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Breakfast Delights - Pune Food Gallery</title>
+  <meta name="description" content="Explore the best of Pune's food – Street Food, Traditional Dishes, Sweets, and more! Built by Rohan Rakh.">
+  <link rel="icon" href="./media/favicon.png" type="image/png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffdf7;
+      color: #333;
+      padding-bottom: 50px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #8b5e3c;
+      margin-top: 20px;
+    }
+    .intro {
+      text-align: center;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .table-container {
+      overflow-x: auto;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #ffbc80;
+      color: white;
+    }
+    td img {
+      width: 70px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 110px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    iframe {
+      display: block;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 900px;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+    .btn-back {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #8b5e3c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #6b4226;
+    }
+    td a {
+      color: #1d3557;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    td a:hover {
+      color: #8b5e3c;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Breakfast Delights in Pune</h1>
+  <div class="intro">
+    <p>Start your day the Puneri way! Pune’s mornings are filled with flavorful breakfast options like piping hot Poha, crispy Kanda Bhaji, and buttery Pav Bhaji. Explore the must-try breakfast dishes served across the city.</p>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Dish</th>
+          <th>Popular Area</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./media/poha.jpg" alt="Poha"></td>
+          <td>Poha</td>
+          <td><a href="https://www.google.com/maps?q=Kothrud,+Pune" target="_blank">Kothrud</a></td>
+          <td>Flattened rice stir-fried with onions and mustard seeds</td>
+          <td>₹20 - ₹30</td>
+        </tr>
+        <tr>
+          <td><img src="./media/upma.jpg" alt="Upma"></td>
+          <td>Upma</td>
+          <td><a href="https://www.google.com/maps?q=Erandwane,+Pune" target="_blank">Erandwane</a></td>
+          <td>Savory semolina dish tempered with spices and vegetables</td>
+          <td>₹25 - ₹35</td>
+        </tr>
+        <tr>
+          <td><img src="./media/misal.jpg" alt="Misal Pav"></td>
+          <td>Misal Pav</td>
+          <td><a href="https://www.google.com/maps?q=Nal+Stop,+Pune" target="_blank">Nal Stop</a></td>
+          <td>Spicy sprouted lentil curry with pav and farsan topping</td>
+          <td>₹40 - ₹60</td>
+        </tr>
+        <tr>
+          <td><img src="./media/kanda-bhaji.webp" alt="Kanda Bhaji"></td>
+          <td>Kanda Bhaji</td>
+          <td><a href="https://www.google.com/maps?q=Shivajinagar,+Pune" target="_blank">Shivajinagar</a></td>
+          <td>Onion fritters deep-fried to golden crispiness</td>
+          <td>₹20 - ₹30</td>
+        </tr>
+        <tr>
+          <td><img src="./media/pav-bhaji.jpg" alt="Pav Bhaji"></td>
+          <td>Pav Bhaji</td>
+          <td><a href="https://www.google.com/maps?q=JM+Road,+Pune" target="_blank">JM Road</a></td>
+          <td>Spicy mashed veggies served with buttered pav</td>
+          <td>₹50 - ₹70</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>🍳 Breakfast Gallery</h2>
+  <div class="gallery">
+    <img src="./media/poha.jpg" alt="Poha">
+    <img src="./media/upma.jpg" alt="Upma">
+    <img src="./media/misal.jpg" alt="Misal Pav">
+    <img src="./media/kanda-bhaji.webp" alt="Kanda Bhaji">
+    <img src="./media/pav-bhaji.jpg" alt="Pav Bhaji">
+  </div>
+
+  <h2 style="text-align: center; color: #6b4226; margin-top: 40px;">📍 Morning Must-Visits</h2>
+  <div style="display: flex; flex-direction: column; gap: 40px; padding: 30px 20px; align-items: center;">
+    <div style="display: flex; flex-wrap: wrap; max-width: 1000px; gap: 20px; justify-content: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JfWUxJyXNvw?si=diJixnvv13fyFmEp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div style="flex: 1 1 300px; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+          <img src="./media/nal stop.jpg" alt="Breakfast Spot" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px;">
+          <h4 style="margin: 10px 0; color: #6b4226;">Nal Stop</h4>
+          <p style="font-size: 14px;">From spicy Misal to buttery Pav Bhaji, start your day here like a true Punekar.</p>
+        </div>
+    </div>
+  </div>
+
+  <h2>🥣 Breakfast Bytes</h2>
+  <div style="max-width: 900px; margin: auto; padding: 20px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; font-size: 16px; line-height: 1.6;">
+      <div style="flex: 1 1 45%; background-color: #fff9f3; padding: 15px 20px; border-radius: 10px;">
+        🍛 Misal Pav is often enjoyed with a glass of chilled buttermilk.
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff9f3; padding: 15px 20px; border-radius: 10px;">
+        🍞 Pav Bhaji originally started as a quick lunch for textile workers in Mumbai.
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff9f3; padding: 15px 20px; border-radius: 10px;">
+        🧅 Kanda Bhaji with cutting chai is a monsoon favorite in Pune.
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff9f3; padding: 15px 20px; border-radius: 10px;">
+        🌿 Poha is often topped with fresh coriander, lemon, and sev.
+      </div>
+    </div>
+  </div>
+
+  <h2>💬 What Locals Say</h2>
+  <div style="text-align: center; padding: 20px;">
+    <p style="font-size: 18px;">“Misal from Nal Stop hits different on Sunday mornings!” – <strong>Sameer R.</strong></p>
+    <p style="font-size: 18px;">“Upma at Erandwane is my go-to every morning.” – <strong>Neha P.</strong></p>
+  </div>
+
+  <a href="./index.html" class="btn-back">⬅ Back to Main Page</a>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desserts & Sweets - Pune Food Gallery</title>
+  <meta name="description" content="Explore the best of Pune's food – Street Food, Traditional Dishes, Sweets, and more! Built by Rohan Rakh.">
+  <link rel="icon" href="./media/favicon.png" type="image/png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf7;
+      color: #333;
+      padding-bottom: 50px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #9b2226;
+      margin-top: 20px;
+    }
+    .intro {
+      text-align: center;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .table-container {
+      overflow-x: auto;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4978e;
+      color: white;
+    }
+    td img {
+      width: 70px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 110px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    iframe {
+      display: block;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 900px;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+    .btn-back {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #9b2226;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #7a171b;
+    }
+    td a {
+      color: #1d3557;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    td a:hover {
+      color: #9b2226;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Desserts & Sweets in Pune</h1>
+  <div class="intro">
+    <p>Pune is not just spicy – it’s also sweet! Explore iconic local desserts that satisfy every sweet tooth. From creamy Shrikhand to crispy Jalebi, this section celebrates Pune's most delightful desserts.</p>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Dish</th>
+          <th>Popular Area</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./media/shrikhand.jpg" alt="Shrikhand"></td>
+          <td>Shrikhand</td>
+          <td><a href="https://www.google.com/maps?q=Sadashiv+Peth,+Pune" target="_blank">Sadashiv Peth</a></td>
+          <td>Thick yogurt dessert with saffron and cardamom</td>
+          <td>₹50 - ₹70</td>
+        </tr>
+        <tr>
+          <td><img src="./media/jalebi.jpg" alt="Jalebi"></td>
+          <td>Jalebi</td>
+          <td><a href="https://www.google.com/maps?q=Budhwar+Peth,+Pune" target="_blank">Budhwar Peth</a></td>
+          <td>Crispy spiral dipped in sugar syrup</td>
+          <td>₹20 - ₹40</td>
+        </tr>
+        <tr>
+          <td><img src="./media/kharvas.jpg" alt="Kharvas"></td>
+          <td>Kharvas</td>
+          <td><a href="https://www.google.com/maps?q=Deccan,+Pune" target="_blank">Deccan</a></td>
+          <td>Milk pudding made from colostrum milk</td>
+          <td>₹40 - ₹60</td>
+        </tr>
+        <tr>
+          <td><img src="./media/modak.jpeg" alt="Modak"></td>
+          <td>Ukdiche Modak</td>
+          <td><a href="https://www.google.com/maps?q=Shaniwarwada,+Pune" target="_blank">Shaniwarwada</a></td>
+          <td>Steamed rice dumpling filled with jaggery and coconut</td>
+          <td>₹30 - ₹50</td>
+        </tr>
+        <tr>
+          <td><img src="./media/basundi.jpg" alt="Basundi"></td>
+          <td>Basundi</td>
+          <td><a href="https://www.google.com/maps?q=Navi+Peth,+Pune" target="_blank">Navi Peth</a></td>
+          <td>Thick sweet milk flavored with cardamom</td>
+          <td>₹40 - ₹60</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>🍨 Dessert Gallery</h2>
+  <div class="gallery">
+    <img src="./media/shrikhand.jpg" alt="Shrikhand">
+    <img src="./media/jalebi.jpg" alt="Jalebi">
+    <img src="./media/kharvas.jpg" alt="Kharvas">
+    <img src="./media/modak.jpeg" alt="Modak">
+    <img src="./media/basundi.jpg" alt="Basundi">
+  </div>
+
+  <h2 style="text-align: center; color: #9b2226; margin-top: 40px;">📍 Sweet Spots in Pune</h2>
+  <div style="display: flex; flex-direction: column; gap: 40px; padding: 30px 20px; align-items: center;">
+    <div style="display: flex; flex-wrap: wrap; max-width: 1000px; gap: 20px; justify-content: center;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LNgF6bImNwk?si=Fqd6k3qZ0q53witL" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <div style="flex: 1 1 300px; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+        <img src="./media/sweet-shop.jpg" alt="Sweet Shop" style="width: 100%; height: 140px; object-fit: cover; border-radius: 8px;">
+        <h4 style="margin: 10px 0; color: #9b2226;">Sadashiv Peth</h4>
+        <p style="font-size: 14px;">Famous for traditional Maharashtrian sweets like Shrikhand & Basundi.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>🍭 Fun Dessert Facts</h2>
+  <div style="max-width: 900px; margin: auto; padding: 20px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; font-size: 16px; line-height: 1.6;">
+      <div style="flex: 1 1 45%; background-color: #fff3f0; padding: 15px 20px; border-radius: 10px;">
+        🧁 Shrikhand is often served with hot puris during festivals.
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff3f0; padding: 15px 20px; border-radius: 10px;">
+        🍮 Kharvas is made using the first milk after a cow gives birth!
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff3f0; padding: 15px 20px; border-radius: 10px;">
+        🍬 Modaks are Lord Ganesha’s favorite and made in every home during Ganesh Chaturthi.
+      </div>
+      <div style="flex: 1 1 45%; background-color: #fff3f0; padding: 15px 20px; border-radius: 10px;">
+        🍥 Jalebis are best eaten fresh, early in the morning!
+      </div>
+    </div>
+  </div>
+
+  <h2>💬 Sweet Words from Locals</h2>
+  <div style="text-align: center; padding: 20px;">
+    <p style="font-size: 18px;">“Shrikhand from Sadashiv Peth reminds me of childhood festivals.” – <strong>Aarti J.</strong></p>
+    <p style="font-size: 18px;">“The Modaks here are just divine!” – <strong>Rahul D.</strong></p>
+  </div>
+
+  <a href="./index.html" class="btn-back">⬅ Back to Main Page</a>
+
+</body>
+</html>

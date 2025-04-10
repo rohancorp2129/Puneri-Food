@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Explore the best of Pune's food – Street Food, Traditional Dishes, Sweets, and more! Built by Rohan Rakh.">
+  <link rel="icon" href="./media/favicon.png" type="image/png">
+  <title>Contact Form – Pune Food Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fefae0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #bc6c25;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      background-color: #bc6c25;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #dda15e;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Share Your Food Story</h2>
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="food">Favorite Dish in Pune:</label></td>
+          <td><input type="text" id="food" name="food" placeholder="e.g., Misal Pav, Vada Pav"></td>
+        </tr>
+        <tr>
+          <td><label for="feedback">Your Experience:</label></td>
+          <td><textarea id="feedback" name="feedback" rows="4" placeholder="Tell us about a place, taste, or moment..."></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="type">Food Type:</label></td>
+          <td>
+            <select id="type" name="type">
+              <option value="street">Street Food</option>
+              <option value="fine">Fine Dining</option>
+              <option value="sweet">Sweets & Desserts</option>
+              <option value="snacks">Snacks</option>
+              <option value="traditional">Traditional Dishes</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Submit Story">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <!-- Back to Home Button -->
+<div style="text-align: center; margin-top: 30px;">
+    <a href="./index.html" style="
+      display: inline-block;
+      background-color: #283618;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    " onmouseover="this.style.backgroundColor='#606c38'" onmouseout="this.style.backgroundColor='#283618'">
+      ← Back to Home
+    </a>
+  </div>
+  
+
+</body>
+</html>

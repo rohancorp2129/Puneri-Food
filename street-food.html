@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore the best of Pune's food – Street Food, Traditional Dishes, Sweets, and more! Built by Rohan Rakh.">
+  <link rel="icon" href="./media/favicon.png" type="image/png">
+  <title>Street Food - Pune Food Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+      padding-bottom: 50px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #e63946;
+      margin-top: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 600px;
+      background-color: #fff;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f4a261;
+      color: white;
+    }
+
+    td img {
+      width: 70px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 110px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    iframe {
+      display: block;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 900px;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .btn-back {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #e63946;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-back:hover {
+      background-color: #c52835;
+    }
+/* Update :  */
+    td a {
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+td a:hover {
+  color: #e63946;
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Street Food in Pune</h1>
+  <div class="intro">
+    <p>Welcome to the tastiest streets in Pune! From spicy Misal Pav to crispy Bhajjis, our local delights are full of flavor and tradition. Here's a list of popular street foods you must try!</p>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Dish</th>
+          <th>Popular Area</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./media/Vada-Pav.jpg" alt="Vada Pav"></td>
+          <td>Vada Pav</td>
+          <td>
+                <a href="https://www.google.com/maps?q=J.M.+Road,+Pune" target="_blank">J.M. Road</a>
+          </td>
+          <td>Spicy potato patty in a bun with chutney</td>
+          <td>₹15 - ₹25</td>
+        </tr>
+        <tr>
+          <td><img src="./media/misal.jpg" alt="Misal Pav"></td>
+          <td>Misal Pav</td>
+          <td>
+            <a href="https://www.google.com/maps?q=Nashik+Phata,+Pune" target="_blank">Nashik Phata</a>
+          </td>
+          <td>Sprout curry served with pav</td>
+          <td>₹40 - ₹60</td>
+        </tr>
+        <tr>
+          <td><img src="./media/dabeli.jpeg" alt="Dabeli"></td>
+          <td>Dabeli</td>
+          <td>
+            <a href="https://www.google.com/maps?q=Kothrud,+Pune" target="_blank">Kothrud</a>
+          </td>
+          <td>Sweet & spicy mashed potato bun</td>
+          <td>₹20 - ₹30</td>
+        </tr>
+        <tr>
+          <td><img src="./media/bhajji.jpg" alt="Bhajji"></td>
+          <td>Bhajji</td>
+          <td>
+            <a href="https://www.google.com/maps?q=Sarasbaug,+Pune" target="_blank">Sarasbaug</a>
+          </td>
+          <td>Deep-fried fritters</td>
+          <td>₹10 - ₹25</td>
+        </tr>
+        <tr>
+          <td><img src="./media/momos.jpg" alt="Momos"></td>
+          <td>Momos</td>
+          <td>
+            <a href="https://www.google.com/maps?q=FC+Road,+Pune" target="_blank">FC Road</a>
+          </td>
+          <td>Steamed dumplings with spicy chutney</td>
+          <td>₹50 - ₹70</td>
+        </tr>
+      </tbody>
+      
+    </table>
+  </div>
+
+  <h2>📸 Street Food Gallery</h2>
+  <div class="gallery">
+    <img src="./media/Vada-Pav.jpg" alt="Vada Pav">
+    <img src="./media/misal.jpg" alt="Misal Pav">
+    <img src="./media/dabeli.jpeg" alt="Dabeli">
+    <img src="./media/bhajji.jpg" alt="Bhajji">
+    <img src="./media/momos.jpg" alt="Momos">
+  </div>
+
+  <h2 style="text-align: center; color: #e63946; margin-top: 40px;">📍 Must-Visit Food Spots in Pune</h2>
+
+  <div style="display: flex; flex-direction: column; gap: 40px; padding: 30px 20px; align-items: center;">
+  
+    <!-- Reusable Row Template -->
+    <!-- JM Road Row -->
+    <div style="display: flex; justify-content: center; align-items: stretch; gap: 20px; flex-wrap: wrap; max-width: 1000px; width: 100%;">
+      <!-- Video 70% -->
+      <div style="flex: 1 1 70%; min-width: 300px;">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/vJOOphzZOlA" title="JM Road Video"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="border-radius: 10px;"></iframe>
+      </div>
+      <!-- Card 30% -->
+      <div style="flex: 1 1 28%; min-width: 250px; background-color: #fff; border-radius: 10px;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.2); padding: 15px; display: flex; flex-direction: column; justify-content: center;">
+        <img src="./media/jm-road.jpg" alt="JM Road" style="width:100%; height:140px; object-fit: cover; border-radius: 8px;">
+        <h4 style="margin: 10px 0 5px; color: #e63946;">J.M. Road</h4>
+        <p style="font-size: 14px;">Known for iconic Vada Pav and Pav Bhaji stalls.</p>
+      </div>
+    </div>
+  
+    <!-- FC Road Row -->
+    <div style="display: flex; justify-content: center; align-items: stretch; gap: 20px; flex-wrap: wrap; max-width: 1000px; width: 100%;">
+      <div style="flex: 1 1 70%; min-width: 300px;">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/l9VYYzGK6kM" title="FC Road Video"
+          frameborder="0" allowfullscreen style="border-radius: 10px;"></iframe>
+      </div>
+      <div style="flex: 1 1 28%; min-width: 250px; background-color: #fff; border-radius: 10px;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.2); padding: 15px; display: flex; flex-direction: column; justify-content: center;">
+        <img src="./media/fc-road.png" alt="FC Road" style="width:100%; height:140px; object-fit: cover; border-radius: 8px;">
+        <h4 style="margin: 10px 0 5px; color: #e63946;">F.C. Road</h4>
+        <p style="font-size: 14px;">Heaven for momos, sandwiches and spicy chaats.</p>
+      </div>
+    </div>
+  
+    <!-- Kothrud Row -->
+    <div style="display: flex; justify-content: center; align-items: stretch; gap: 20px; flex-wrap: wrap; max-width: 1000px; width: 100%;">
+      <div style="flex: 1 1 70%; min-width: 300px;">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/k6T7Fpa_B2c" title="Kothrud Video"
+          frameborder="0" allowfullscreen style="border-radius: 10px;"></iframe>
+      </div>
+      <div style="flex: 1 1 28%; min-width: 250px; background-color: #fff; border-radius: 10px;
+                  box-shadow: 0 2px 8px rgba(0,0,0,0.2); padding: 15px; display: flex; flex-direction: column; justify-content: center;">
+        <img src="./media/kothrud.avif" alt="Kothrud" style="width:100%; height:140px; object-fit: cover; border-radius: 8px;">
+        <h4 style="margin: 10px 0 5px; color: #e63946;">Kothrud</h4>
+        <p style="font-size: 14px;">Famous for Dabeli, Bhurji, and late-night snacks.</p>
+      </div>
+    </div>
+  
+  </div>
+  
+
+
+
+  <h2 style="text-align: center; color: #e63946; margin-top: 40px;">🎉 Fun Street Food Facts</h2>
+
+  <div style="max-width: 900px; margin: auto; padding: 20px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; font-size: 16px; line-height: 1.6;">
+  
+      <div style="flex: 1 1 45%; background-color: #fffbea; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        🍔 Did you know Vada Pav is often called the “Indian Burger”?
+      </div>
+  
+      <div style="flex: 1 1 45%; background-color: #fffbea; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        🌶️ Misal Pav from Pune is spicier than any other region!
+      </div>
+  
+      <div style="flex: 1 1 45%; background-color: #fffbea; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        🥟 FC Road sees over 1,000 plates of momos sold each day.
+      </div>
+  
+      <div style="flex: 1 1 45%; background-color: #fffbea; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        🍡 Many Pune stalls still use secret family recipes passed down generations.
+      </div>
+  
+      <div style="flex: 1 1 45%; background-color: #fffbea; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        🥤 Sugarcane juice is one of the most consumed drinks in Pune’s street markets.
+      </div>
+  
+      <div style="flex: 1 1 45%; background-color: #fffbea; padding: 15px 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        🧆 Some stalls in Kothrud open as early as 6 AM for breakfast crowds!
+      </div>
+  
+    </div>
+  </div>
+  
+
+<h2>❤️ Customer Favorites</h2>
+<div style="text-align: center; padding: 20px;">
+  <p style="font-size: 18px;">“I travel across the city just for the misal at Nashik Phata!” – <strong>Rohit M.</strong></p>
+  <p style="font-size: 18px;">“The street sandwiches at JM Road are better than cafes!” – <strong>Sneha P.</strong></p>
+</div>
+
+
+
+  <a href="./index.html" class="btn-back">⬅ Back to Main Page</a>
+
+</body>
+</html>
