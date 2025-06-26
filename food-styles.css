@@ -1,0 +1,597 @@
+/* Unified Food Styles for All Pages */
+:root {
+    /* Color Scheme */
+    --primary-color: #8b5e3c;
+    --secondary-color: #bc6c25;
+    --background-color: #fffdf7;
+    --card-bg: #fff;
+    --text-color: #333;
+    --light-text: #555;
+    --highlight-bg: #ffe0b2;
+    --highlight-text: #6b4226;
+    --button-hover: #6b4226;
+    
+    /* For sweets page */
+    --sweets-primary: #9b2226;
+    --sweets-secondary: #bb3e03;
+  }
+  
+  /* Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-bottom: 50px;
+  }
+
+  /* left and right space  */
+  /* Remove default margins and padding */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Main content container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; /* Small padding on mobile */
+  width: 100%;
+}
+
+/* For your existing sections - add this class to your sections */
+.content-section {
+  padding: 20px 0;
+}
+
+/* Update your card container */
+.card-container {
+  padding: 20px 0; /* Remove side padding */
+  max-width: 100%;
+}
+
+/* Update your gallery */
+.gallery {
+  padding: 25px 0; /* Remove side padding */
+}
+
+/* Update your video section */
+.video-section {
+  padding: 20px 0; /* Remove side padding */
+}
+
+
+
+  /* ===== Dark Mode Variables ===== */
+:root {
+    /* Light mode colors */
+    --primary-color: #8b5e3c;
+    --secondary-color: #bc6c25;
+    --background-color: #fffdf7;
+    --card-bg: #fff;
+    --text-color: #333;
+    --light-text: #555;
+    --highlight-bg: #ffe0b2;
+    --highlight-text: #6b4226;
+    --button-hover: #6b4226;
+    --sweets-primary: #9b2226;
+    --sweets-secondary: #bb3e03;
+  }
+  
+  .dark-mode {
+    /* Dark mode colors */
+    --primary-color: #d49a6a;
+    --secondary-color: #e69138;
+    --background-color: #1a1a1a;
+    --card-bg: #2d2d2d;
+    --text-color: #f0f0f0;
+    --light-text: #cccccc;
+    --highlight-bg: #3a3a3a;
+    --highlight-text: #ffffff;
+    --button-hover: #4a4a4a;
+    --sweets-primary: #d45d5d;
+    --sweets-secondary: #e67e5a;
+  }
+  
+  /* ===== Dark Mode Toggle Button ===== */
+  .dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .dark-mode-toggle.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dark-mode-toggle:hover {
+    transform: scale(1.1) translateY(0);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* ===== Smooth Transitions ===== */
+  body,
+  .dish-highlight,
+  .food-card,
+  .info-card,
+  .facts div,
+  .gallery img,
+  .highlight-banner {
+    transition: 
+      background-color 0.3s ease, 
+      color 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  
+  /* ===== Dark Mode Specific Styles ===== */
+  .dark-mode body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .dark-mode .food-card,
+  .dark-mode .info-card,
+  .dark-mode .dish-highlight {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark-mode .facts div {
+    background-color: #333;
+    color: var(--text-color);
+    border-left: 3px solid var(--primary-color);
+  }
+  
+  .dark-mode .highlight-banner {
+    background: linear-gradient(to right, #444, #555);
+    color: var(--highlight-text);
+  }
+  
+  .dark-mode .btn-back {
+    background-color: var(--secondary-color);
+  }
+  
+  .dark-mode .btn-back:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Fix for gallery images in dark mode */
+  .dark-mode .gallery img {
+    filter: brightness(0.9);
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 1.8rem;
+  }
+  
+  .intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Dish of the Day */
+  .dish-highlight {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fffbe6;
+    border: 2px dashed #e29500;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .dish-highlight img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .dish-highlight h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .dish-highlight p {
+    color: var(--light-text);
+    margin-bottom: 10px;
+  }
+  
+  .dish-highlight a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .dish-highlight a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color);
+  }
+  
+  /* Highlight Banner */
+  .highlight-banner {
+    background: linear-gradient(to right, var(--highlight-bg), #ffe9cc);
+    color: var(--highlight-text);
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Card Grid */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .food-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .food-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .food-card h4 {
+    color: var(--secondary-color);
+    margin: 15px 0 8px;
+    padding: 0 15px;
+  }
+  
+  .food-card p {
+    padding: 0 15px;
+    color: var(--light-text);
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    min-height: 60px;
+  }
+  
+  .food-card a {
+    display: inline-block;
+    margin: 0 auto 15px;
+    padding: 8px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .food-card a:hover {
+    background-color: var(--button-hover);
+  }
+  
+ /* Video Section - Fixed 60/40 Split */
+.video-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.video-section iframe {
+  flex: 0 0 calc(60% - 10px); /* 60% minus half the gap */
+  min-width: 300px;
+  height: 315px; /* Fixed height */
+  border: none;
+  border-radius: 8px;
+}
+
+.info-card {
+  flex: 0 0 calc(40% - 10px); /* 40% minus half the gap */
+  min-width: 300px;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.info-card img {
+  width: 100%; /* Make image fill container */
+  height: 160px;
+  object-fit: cover; /* Ensure image covers area without distortion */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Dark mode adjustment */
+.dark-mode .info-card {
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .video-section iframe,
+  .info-card {
+    flex: 0 0 100%; /* Full width on smaller screens */
+  }
+  
+  .video-section iframe {
+    height: 250px; /* Smaller height on mobile */
+  }
+}
+  
+  /* Gallery */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .gallery img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  /* Lightbox effect for gallery */
+  .gallery-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .gallery-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+  }
+  
+  .close-gallery {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Facts Section */
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .facts div {
+    flex: 1 1 45%;
+    background-color: #fff9f3;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 17px;
+  }
+  
+  .testimonials p {
+    margin: 15px 0;
+    font-style: italic;
+  }
+  
+  .testimonials strong {
+    font-style: normal;
+    color: var(--primary-color);
+  }
+  
+  /* Back Button */
+  .btn-back {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Table Styles (for sweets page) */
+  .table-container {
+    overflow-x: auto;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #eee;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  td img {
+    width: 70px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  td a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  td a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+  
+  /* Sweets Page Specific */
+  body.sweets-page {
+    --primary-color: var(--sweets-primary);
+    --secondary-color: var(--sweets-secondary);
+    --highlight-bg: #f4978e;
+    --highlight-text: #7a171b;
+    --button-hover: #7a171b;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .video-section iframe,
+    .info-card {
+      flex: 1 1 100%;
+    }
+    
+    .facts div {
+      flex: 1 1 100%;
+    }
+    
+    .gallery img {
+      width: 150px;
+      height: 120px;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .gallery img {
+      width: 120px;
+      height: 100px;
+    }
+    
+    .section-title {
+      font-size: 1.3rem;
+    }
+    
+    .dish-highlight {
+      padding: 15px;
+    }
+  }

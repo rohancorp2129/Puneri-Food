@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fff0e1, #ffe5b4);
+  color: #333;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0; /* remove any extra */
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ffb36b;
+  border-radius: 10px;
+  background-color: #fffdf9;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* ensures padding doesn't affect width */
+}
+
+.input-group label {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  background: #fffdf9;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #d35400;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* Button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.submit-btn:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #ff512f, #f09819);
+}
+
+/* Back Link */
+.back-link {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.back-link a {
+  color: #d35400;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 30px 15px;
+    padding: 30px 20px;
+  }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

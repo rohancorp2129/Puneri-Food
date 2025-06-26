@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the best of Pune's food – Street Food, Traditional Dishes, Sweets, and more! Built by Rohan Rakh.">
+  <meta name="color-scheme" content="light dark">
+  <title>Pune Food Gallery</title>
+  <link rel="icon" href="./media/favicon.png" type="image/png">
+   <!-- <link rel="icon" href="./media/logo.svg" type="image/svg+xml"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index_css.css">
+  <link rel="stylesheet" href="carousel.css" />
+  <script src="food-data.js"></script>
+  <script src="search.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+  
+</head>
+<body>
+   
+  <!-- Dark Mode Toggle Button -->
+  <button class="dark-mode-toggle" title="Toggle Dark Mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+
+  <header class="netflix-carousel">
+    <!-- Carousel Track -->
+    <div class="carousel-track">
+      <!-- Slide 1 -->
+      <!-- Inside your existing carousel-slide (slide 1) -->
+<div class="carousel-slide active">
+  <div class="slide-video">
+    <video autoplay muted loop playsinline>
+      <source src="./media/food-video.mp4" type="video/mp4">
+    </video>
+    <div class="gradient-overlay"></div>
+  </div>
+  <div class="slide-content">
+    <h1 class="slide-title">PUNE FOOD GALLERY</h1>
+    <h2 class="slide-subtitle">Unlimited Food Experiences</h2>
+    <p class="slide-description">From street food to fine dining - we've got Pune covered!</p>
+  </div>
+</div>
+
+  
+      <!-- Slide 2 -->
+      <div class="carousel-slide">
+        <div class="slide-video">
+          <video autoplay muted loop playsinline>
+            <source src="./media/food-video-1.mp4" type="video/mp4">
+          </video>
+          <div class="gradient-overlay"></div>
+        </div>
+        <div class="slide-content">
+          <h1 class="slide-title">TRADITIONAL FLAVORS</h1>
+          <h2 class="slide-subtitle">Authentic Maharashtrian Cuisine</h2>
+          <p class="slide-description">Discover Pune's rich culinary heritage</p>
+        </div>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="carousel-slide">
+        <div class="slide-video">
+          <video autoplay muted loop playsinline>
+            <source src="./media/food-video-2.mp4" type="video/mp4">
+          </video>
+          <div class="gradient-overlay"></div>
+        </div>
+        <div class="slide-content">
+          <h1 class="slide-title">FESTIVAL SPECIALS</h1>
+          <h2 class="slide-subtitle">Seasonal Delicacies</h2>
+          <p class="slide-description">Celebrate with Pune's festive treats</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Navigation buttons -->
+    <div class="carousel-nav">
+      <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  
+    <!-- Slide indicators -->
+    <div class="carousel-indicators">
+      <button class="indicator active" data-slide="0"></button>
+      <button class="indicator" data-slide="1"></button>
+      <button class="indicator" data-slide="2"></button>
+    </div>
+
+    <!-- Search bar fixed globally at top -->
+   <div class="search-container fixed-search">
+    <form id="searchForm" class="search-form">
+      <div class="search-input-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search your favorite food..." autocomplete="off" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </form>
+  </div>
+  </header>
+  
+  <div class="nav-buttons">
+    <a href="#street-food">Street Food</a>
+    <a href="#traditional-food">Traditional Dishes</a>
+    <a href="#sweets">Desserts & Sweets</a>
+    <a href="#snacks">Snacks & Chaats</a>
+    <a href="#breakfast">Breakfast Delights</a>
+    <a href="#festival">Festival Specials</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="10" onmouseover="this.stop();" onmouseout="this.start();">
+      <div class="marquee-content">
+        <div class="marquee-item">
+          <img src="./media/dessert-mastani.jpeg" alt="Mango Mastani">
+          <span class="marquee-text">🍨 Summer Treat: Mango Mastani @ Sujata – ₹80 only!</span>
+        </div>
+        <div class="marquee-item">
+          <img src="./media/breakfast-misal.jpeg" alt="Misal Pav">
+          <span class="marquee-text">🔥 Misal Pav + Buttermilk @ Bedekar – Just ₹60!</span>
+        </div>
+        <div class="marquee-item">
+          <img src="./media/sweet-ladoo.webp" alt="Ladoo">
+          <span class="marquee-text">🎁 Diwali Offer: Free Ladoo Box on ₹500+ at Kaka Halwai</span>
+        </div>
+        <div class="marquee-item">
+          <img src="./media/breakfast-poha.webp" alt="Poha">
+          <span class="marquee-text">☀️ Morning Special: Poha + Tea @ Vaishali, FC Road – ₹40</span>
+        </div>
+        <div class="marquee-item">
+          <img src="./media/snack-bhel.jpeg" alt="Bhel Puri">
+          <span class="marquee-text">🌶️ Spicy Bhel Puri @ Tulshibaug – Only ₹30!</span>
+        </div>
+      </div>
+    </marquee>
+  </div>
+  
+  <h2 class="section-title" id="street-food">Street Food</h2>
+  <div class="container" id="street-food-container"></div>
+  <div class="mini-explore-btn">
+    <a href="./street-food.html" >Explore More →</a>
+  </div>
+
+  <h2 class="section-title" id="traditional-food">Traditional Dishes</h2>
+  <div class="container" id="traditional-food-container"></div>
+  <div class="mini-explore-btn">
+    <a href="./traditional-food.html" target="_blank">Explore More →</a>
+  </div>
+
+  <h2 class="section-title" id="sweets">Desserts & Sweets</h2>
+  <div class="container" id="sweets-container"></div>
+  <div class="mini-explore-btn">
+    <a href="./sweets.html" >Explore More →</a>
+  </div>
+
+  <h2 class="section-title" id="snacks">Snacks & Chaats</h2>
+  <div class="container" id="snacks-container"></div>
+  <div class="mini-explore-btn">
+    <a href="./snacks.html" >Explore More →</a>
+  </div>
+
+  <h2 class="section-title" id="breakfast">Breakfast Delights</h2>
+  <div class="container" id="breakfast-container"></div>
+  <div class="mini-explore-btn">
+    <a href="./breakfast.html">Explore More →</a>
+  </div>
+
+  <h2 class="section-title" id="festival">Festival Specials</h2>
+  <div class="container" id="festival-container"></div>
+  <div class="mini-explore-btn">
+    <a href="./festival.html">Explore More →</a>
+  </div>
+
+  <div class="media-container">
+    <iframe src="https://www.youtube.com/embed/vJOOphzZOlA" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    <iframe src="./media/food-guide.pdf"></iframe>
+  </div>
+  
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p><strong>Address:</strong> Kawade Nagar, Trimurti Colony, Pimple Gurav, Pimpri-Chinchwad, Maharashtra</p>
+  
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.7654007423544!2d73.80986607519327!3d18.584612432521354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b8c670841a2d%3A0x562e46f8447bbf9!2sKawade%20Nagar%2C%20Trimurti%20Colony%2C%20Pimple%20Gurav%2C%20Pimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1744098054464!5m2!1sen!2sin"
+        width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  
+    <div class="feedback-section">
+      <p class="feedback-title"><i class="fas fa-paper-plane"></i> Send Feedback:</p>
+      <div class="feedback-links">
+        <a href="https://wa.me/7410112829" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://www.instagram.com/rohan_rakh_2129" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="mailto:rohanrakh1212@gmail.com" class="email"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+      
+      <a href="./Puneri_food_Form.html" class="feedback-button">
+        <i class="fas fa-comment-dots"></i>
+        Fill Feedback Form
+      </a>
+    </div>
+  </section>
+  
+  <footer>
+    &copy; 2025 Pune Food Gallery | All rights reserved.
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/rohan_rakh_2129" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://wa.me/7410112829" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:rohanrakh1212@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="credit">
+      Built by <a href="https://github.com/rohancorp2129" target="_blank">Rohan Rakh</a>
+    </div>
+  </footer>
+
+  <button onclick="scrollToTop()" id="goTopBtn" title="Go to Top">↑</button>
+
+  <script>
+    // Food items data
+    const foodItems = {
+      "street-food-container": [
+        { img: "./media/Vada-Pav.jpg", name: "Vada Pav", desc: "A crispy potato fritter tucked inside a pav with dry garlic chutney – the ultimate on-the-go snack!" },
+        { img: "./media/Pav Bhaji.jpg", name: "Pav Bhaji", desc: "A spicy mashed veggie curry with buttered pav buns. Comfort food that never fails to please." },
+        { img: "./media/Samosa.jpg", name: "Samosa", desc: "Deep-fried pastry filled with spiced potatoes and peas. A popular street snack!" },
+        { img: "./media/Bhel Puri.png", name: "Bhel Puri", desc: "A crunchy mix of puffed rice, sev, vegetables, and tangy chutneys." }
+      ],
+      "traditional-food-container": [
+        { img: "./media/Pithla Bhakri.jpg", name: "Pithla Bhakri", desc: "Rustic gram flour curry served with millet flatbread. Simple, hearty, and full of flavor." },
+        { img: "./media/misal-pav.webp", name: "Misal Pav", desc: "A spicy lentil-based curry loaded with crunchy toppings like farsan, onions, and lemon juice. A true Pune favorite." },
+        { img: "./media/Thalipeeth.jpg", name: "Thalipeeth", desc: "A multi-grain flatbread served with yogurt or chutney. A hearty, nutritious dish." },
+        { img: "./media/Bhindi-Bhaji.jpg", name: "Bhindi Bhaji", desc: "A dry, stir-fried okra dish, spiced perfectly for a simple yet flavorful meal." }
+      ],
+      "sweets-container": [
+        { img: "./media/Mastani.jpg", name: "Mastani", desc: "A rich milkshake loaded with ice cream and dry fruits. Mango Mastani is Pune's sweetest indulgence!" },
+        { img: "./media/Bakarwadi.webp", name: "Bakarwadi", desc: "A crunchy spiral snack with a spicy-sweet filling. Perfect with your evening chai!" },
+        { img: "./media/Modak.jpeg", name: "Modak", desc: "Sweet dumplings stuffed with coconut and jaggery, often enjoyed during Ganesh Chaturthi." },
+        { img: "./media/Puran-Poli.jpg", name: "Puran Poli", desc: "A sweet flatbread stuffed with lentils and jaggery, a traditional Maharashtrian delicacy." }
+      ],
+      "snacks-container": [
+        { img: "./media/kanda-bhaji.webp", name: "Kanda Bhaji", desc: "Crispy onion fritters – monsoon and chai's best friend." },
+        { img: "./media/bhel-puri.jpg", name: "Bhel Puri", desc: "A spicy, tangy mix of puffed rice, sev, onions, and chutneys." },
+        { img: "./media/Aloo-Tikki.jpg", name: "Aloo Tikki", desc: "Crispy potato patties filled with spiced peas. A favorite for chaat lovers." },
+        { img: "./media/Pani-Puri.jpg", name: "Pani Puri", desc: "Crispy hollow puris filled with spicy tamarind water and a mix of potatoes." }
+      ],
+      "breakfast-container": [
+        { img: "./media/poha.jpg", name: "Kanda Poha", desc: "Flattened rice sautéed with onions and spices – a light and popular breakfast." },
+        { img: "./media/upma.jpg", name: "Upma", desc: "Savory semolina porridge flavored with veggies and spices – comforting and wholesome." },
+        { img: "./media/Puran-Poli-Breakfast.webp", name: "Puran Poli Breakfast", desc: "A sweet lentil-stuffed flatbread often enjoyed as a breakfast item." },
+        { img: "./media/Paratha.avif", name: "Paratha", desc: "A flaky, stuffed Indian flatbread, often served with yogurt or chutneys." }
+      ],
+      "festival-container": [
+        { img: "./media/modak.jpeg", name: "Ukdiche Modak", desc: "Steamed sweet dumplings filled with coconut and jaggery – Lord Ganesha's favorite!" },
+        { img: "./media/puran-poli.jpg", name: "Puran Poli", desc: "Sweet lentil-stuffed flatbread – a festive treat in every Maharashtrian home." },
+        { img: "./media/Sabudana-Khichdi.webp", name: "Sabudana Khichdi", desc: "Tapioca pearls cooked with peanuts and potatoes, a popular fasting dish." },
+        { img: "./media/Shrikhand.jpg", name: "Shrikhand", desc: "Sweetened yogurt flavored with saffron and cardamom, a traditional dessert during festivals." }
+      ]
+    };
+
+    // Create food cards
+    for (const [containerId, foods] of Object.entries(foodItems)) {
+      const container = document.getElementById(containerId);
+      foods.forEach(({ img, name, desc }) => {
+        const card = document.createElement("div");
+        card.className = "food-card";
+        card.innerHTML = `
+          <img src="${img}" alt="${name}" class="food-img">
+          <div class="food-name">${name}</div>
+          <div class="food-desc">${desc}</div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll('.nav-buttons a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Scroll to top button functionality
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function() {
+      const goTopBtn = document.getElementById("goTopBtn");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        goTopBtn.style.display = "block";
+      } else {
+        goTopBtn.style.display = "none";
+      }
+    };
+
+    // Carousel functionality
+    const carouselTrack = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const indicators = document.querySelectorAll('.indicator');
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+
+    function goToSlide(index) {
+      carouselTrack.style.transform = `translateX(-${index * 100}%)`;
+      document.querySelector('.indicator.active').classList.remove('active');
+      indicators[index].classList.add('active');
+      slides[currentSlide].classList.remove('active');
+      currentSlide = index;
+      slides[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      const newIndex = (currentSlide + 1) % totalSlides;
+      goToSlide(newIndex);
+    }
+
+    function prevSlide() {
+      const newIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+      goToSlide(newIndex);
+    }
+
+    // Set up event listeners
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    indicators.forEach(indicator => {
+      indicator.addEventListener('click', function() {
+        const slideIndex = parseInt(this.getAttribute('data-slide'));
+        goToSlide(slideIndex);
+      });
+    });
+
+    // Auto-advance carousel
+    let carouselInterval = setInterval(nextSlide, 5000);
+
+    // Pause on hover
+    const carousel = document.querySelector('.netflix-carousel');
+    carousel.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+    carousel.addEventListener('mouseleave', () => {
+      carouselInterval = setInterval(nextSlide, 5000);
+    });
+
+    // Dark Mode Toggle
+    const darkModeToggle = document.querySelector('.dark-mode-toggle');
+    
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.documentElement.classList.add('dark-mode');
+      darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+    
+    setTimeout(() => {
+      darkModeToggle.classList.add('visible');
+    }, 500);
+
+    darkModeToggle.addEventListener('click', function() {
+      document.documentElement.classList.toggle('dark-mode');
+      
+      if (document.documentElement.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+        this.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+        this.innerHTML = '<i class="fas fa-moon"></i>';
+      }
+    });
+
+
+    // Search functionality
+  const observer = new MutationObserver(() => {
+    const activeSlide = document.querySelector('.carousel-slide.active');
+    const fixedSearch = document.querySelector('.fixed-search');
+    if (activeSlide && !activeSlide.contains(fixedSearch)) {
+      activeSlide.appendChild(fixedSearch);
+    }
+  });
+
+  observer.observe(document.querySelector('.carousel-track'), { childList: true, subtree: true });
+
+  </script>
+</body>
+</html>

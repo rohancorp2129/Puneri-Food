@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Explore the best of Pune's food – Street Food, Traditional Dishes, Sweets, and more! Built by Rohan Rakh.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puneri Food Feedback Form</title>
+  <link rel="stylesheet" href="Puneri_food_Form_css.css">
+  <!-- <link rel="icon" href="./media/favicon.png" type="image/png"> -->
+  <link rel="icon" href="./media/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>🍛 We’d Love Your Feedback!</h2>
+    <form>
+      <div class="input-group">
+        <input type="text" id="name" name="name" required>
+        <label for="name">Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" name="email" required>
+        <label for="email">Email Address</label>
+      </div>
+
+      <div class="input-group">
+        <select id="food" name="food" required>
+          <option value="" disabled selected>-- Select your Favorite Dish --</option>
+          <option value="vada pav">Vada Pav</option>
+          <option value="misal">Misal</option>
+          <option value="modak">Modak</option>
+          <option value="poha">Poha</option>
+        </select>
+        <label for="food">Favorite Food</label>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Write your thoughts here...</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    <div class="back-link">
+      <a href="./index.html">⬅ Back to Main Page</a>
+    </div>
+  </div>
+
+</body>
+</html>

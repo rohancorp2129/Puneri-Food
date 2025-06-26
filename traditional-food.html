@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Explore the best of Pune's food – Street Food, Traditional Dishes, Sweets, and more! Built by Rohan Rakh.">
+  <link rel="icon" href="./media/favicon.png" type="image/png">
+  <!-- <link rel="icon" href="./media/logo.svg" type="image/svg+xml"> -->
+  <title>Traditional Dishes - Pune Food Gallery</title>
+  <meta name="color-scheme" content="light dark">
+  
+  <link rel="stylesheet" href="./food-styles.css">
+  <style>
+    /* Traditional food specific color scheme */
+    body.traditional-page {
+      --primary-color: #2a9d8f;
+      --secondary-color: #264653;
+      --highlight-bg: #a2d2ff;
+      --highlight-text: #264653;
+      --button-hover: #1b6d5a;
+    }
+  </style>
+</head>
+<body class="traditional-page">
+
+  <h1>Traditional Dishes of Pune</h1>
+  <div class="intro">
+    <p>Experience the authentic flavors of Pune's traditional cuisine! These timeless dishes reflect the city's rich culture and homegrown taste. Made with love and heritage, here are some must-try delicacies.</p>
+  </div>
+
+  <!-- Dish of the Day -->
+  <h2 class="section-title">🌟 Dish of the Day</h2>
+  <div class="dish-highlight" id="dishOfTheDay">
+    <!-- Random dish with image will appear here -->
+  </div>
+
+  <!-- Highlight Banner -->
+  <h2 class="section-title">🔥 Traditional Highlights</h2>
+  <div class="highlight-banner">
+    <p id="highlightText">🧄 Zunka Bhakri used to be the staple lunch for farmers and laborers!</p>
+  </div>
+
+  <!-- Food Cards -->
+  <h2 class="section-title">🍽️ Traditional Specialties</h2>
+  <div class="card-container">
+    <div class="food-card">
+      <img src="./media/zunka-bhakri.jpg" alt="Zunka Bhakri">
+      <h4>Zunka Bhakri</h4>
+      <p>Spicy chickpea flour dish with jowar roti</p>
+      <a href="https://www.google.com/maps?q=Shaniwar+Wada,+Pune" target="_blank">📍 Shaniwar Wada</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/bharli-vangi.png" alt="Bharli Vangi">
+      <h4>Bharli Vangi</h4>
+      <p>Stuffed brinjal cooked in spicy peanut gravy</p>
+      <a href="https://www.google.com/maps?q=Sadashiv+Peth,+Pune" target="_blank">📍 Sadashiv Peth</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/varan-bhaat.jpg" alt="Varan Bhaat">
+      <h4>Varan Bhaat</h4>
+      <p>Simple toor dal with rice and ghee</p>
+      <a href="https://www.google.com/maps?q=Karve+Road,+Pune" target="_blank">📍 Karve Road</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/pitla-bhakri.webp" alt="Pitla Bhakri">
+      <h4>Pitla Bhakri</h4>
+      <p>Gram flour curry with millet roti</p>
+      <a href="https://www.google.com/maps?q=Narayan+Peth,+Pune" target="_blank">📍 Narayan Peth</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/masale-bhat.jpeg" alt="Masale Bhat">
+      <h4>Masale Bhat</h4>
+      <p>Spiced rice cooked with vegetables</p>
+      <a href="https://www.google.com/maps?q=Appa+Balwant+Chowk,+Pune" target="_blank">📍 Appa Balwant Chowk</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/thalipeeth.jpg" alt="Thalipeeth">
+      <h4>Thalipeeth</h4>
+      <p>Multi-grain spiced flatbread</p>
+      <a href="https://www.google.com/maps?q=Kothrud,+Pune" target="_blank">📍 Kothrud</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/puran-poli.jpg" alt="Puran Poli">
+      <h4>Puran Poli</h4>
+      <p>Sweet flatbread stuffed with chana dal and jaggery</p>
+      <a href="https://www.google.com/maps?q=Tilak+Road,+Pune" target="_blank">📍 Tilak Road</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/amti.avif" alt="Amti">
+      <h4>Amti</h4>
+      <p>Spicy and tangy dal with kokum</p>
+      <a href="https://www.google.com/maps?q=Budhwar+Peth,+Pune" target="_blank">📍 Budhwar Peth</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/Sabudana-Khichdi.webp" alt="Sabudana Khichdi">
+      <h4>Sabudana Khichdi</h4>
+      <p>Sago cooked with peanuts and mild spices</p>
+      <a href="https://www.google.com/maps?q=Shivajinagar,+Pune" target="_blank">📍 Shivajinagar</a>
+    </div>
+
+    <div class="food-card">
+      <img src="./media/matki.jpg" alt="Matki Usal">
+      <h4>Matki Usal</h4>
+      <p>Spicy sprouted moth beans curry</p>
+      <a href="https://www.google.com/maps?q=Deccan,+Pune" target="_blank">📍 Deccan</a>
+    </div>
+  </div>
+
+  <!-- Video Section -->
+  <h2 class="section-title">📍 Traditional Food Spots</h2>
+  <div class="video-section">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HrEIDYh8pfc?si=nkNtw7MSXoDplOaG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="info-card">
+      <img src="./media/traditional-spot.avif" alt="Traditional Food Spot">
+      <h4>Sadashiv Peth</h4>
+      <p>Home to authentic Maharashtrian traditional cuisine</p>
+    </div>
+  </div>
+
+  <!-- Gallery -->
+  <h2 class="section-title">📸 Traditional Food Gallery</h2>
+  <div class="gallery">
+    <img src="./media/zunka-bhakri.jpg" alt="Zunka Bhakri">
+    <img src="./media/bharli-vangi.png" alt="Bharli Vangi">
+    <img src="./media/varan-bhaat.jpg" alt="Varan Bhaat">
+    <img src="./media/pitla-bhakri.webp" alt="Pitla Bhakri">
+    <img src="./media/masale-bhat.jpeg" alt="Masale Bhat">
+    <img src="./media/thalipeeth.jpg" alt="Thalipeeth">
+    <img src="./media/puran-poli.jpg" alt="Puran Poli">
+    <img src="./media/amti.avif" alt="Amti">
+    <img src="./media/Sabudana-Khichdi.webp" alt="Sabudana Khichdi">
+    <img src="./media/matki.jpg" alt="Matki Usal">
+  </div>
+
+  <!-- Facts Section -->
+  <h2 class="section-title">🍛 Traditional Food Facts</h2>
+  <div class="facts">
+    <div>🧄 Zunka Bhakri used to be the staple lunch for farmers and laborers</div>
+    <div>🍆 Bharli Vangi is served during many Maharashtrian wedding feasts</div>
+    <div>🥘 Masale Bhat is often paired with 'Papad' and 'Raita' for festive meals</div>
+    <div>🍚 Varan Bhaat is offered in many temples as prasad</div>
+    <div>🌾 Thalipeeth is made from 5-6 different types of flours</div>
+    <div>🫓 Puran Poli is traditionally made during Holi festival</div>
+  </div>
+
+  <!-- Testimonials -->
+  <h2 class="section-title">💬 What Locals Say</h2>
+  <div class="testimonials">
+    <p>"My grandmother's Bharli Vangi tastes just like the one in Sadashiv Peth!" – <strong>Meenal D.</strong></p>
+    <p>"Varan Bhaat with ghee is my comfort food forever." – <strong>Ravi K.</strong></p>
+    <p>"The best Thalipeeth is found in Kothrud's small eateries!" – <strong>Priya M.</strong></p>
+  </div>
+
+  <!-- Back Button -->
+  <a href="./index.html" class="btn-back">⬅ Back to Main Page</a>
+
+  <!-- Scripts -->
+  <script>
+    // Dish of the Day
+    const dishes = [
+      {
+        name: "Zunka Bhakri",
+        desc: "Spicy chickpea flour dish with jowar roti - a farmer's favorite!",
+        img: "./media/zunka-bhakri.jpg",
+        link: "https://www.google.com/maps?q=Shaniwar+Wada,+Pune"
+      },
+      {
+        name: "Bharli Vangi",
+        desc: "Stuffed brinjal cooked in spicy peanut gravy - a wedding feast staple!",
+        img: "./media/bharli-vangi.png",
+        link: "https://www.google.com/maps?q=Sadashiv+Peth,+Pune"
+      },
+      {
+        name: "Varan Bhaat",
+        desc: "Simple toor dal with rice and ghee - comfort food at its best!",
+        img: "./media/varan-bhaat.jpg",
+        link: "https://www.google.com/maps?q=Karve+Road,+Pune"
+      },
+      {
+        name: "Puran Poli",
+        desc: "Sweet flatbread stuffed with chana dal and jaggery - festival favorite!",
+        img: "./media/puran-poli.jpg",
+        link: "https://www.google.com/maps?q=Tilak+Road,+Pune"
+      },
+      {
+        name: "Thalipeeth",
+        desc: "Multi-grain spiced flatbread - packed with nutrition and flavor!",
+        img: "./media/thalipeeth.jpg",
+        link: "https://www.google.com/maps?q=Kothrud,+Pune"
+      }
+    ];
+  
+    const pick = dishes[Math.floor(Math.random() * dishes.length)];
+    const box = document.getElementById('dishOfTheDay');
+    box.innerHTML = `
+      <img src="${pick.img}" alt="${pick.name}">
+      <h3>${pick.name}</h3>
+      <p>${pick.desc}</p>
+      <a href="${pick.link}" target="_blank">📍 View on Map</a>
+    `;
+
+    // Banner Highlights
+    const highlights = [
+      "🧄 Zunka Bhakri used to be the staple lunch for farmers and laborers!",
+      "🍆 Bharli Vangi is served during many Maharashtrian wedding feasts",
+      "🥘 Masale Bhat is often paired with 'Papad' and 'Raita' for festive meals",
+      "🍚 Varan Bhaat is offered in many temples as prasad",
+      "🌾 Thalipeeth is made from 5-6 different types of flours",
+      "🫓 Puran Poli is traditionally made during Holi festival"
+    ];
+
+    let current = 0;
+    const textElement = document.getElementById("highlightText");
+
+    setInterval(() => {
+      current = (current + 1) % highlights.length;
+      textElement.innerHTML = highlights[current];
+    }, 3000);
+
+    // Gallery Lightbox functionality
+    const galleryImages = document.querySelectorAll('.gallery img');
+    const overlay = document.createElement('div');
+    overlay.className = 'gallery-overlay';
+    
+    const overlayImg = document.createElement('img');
+    const closeBtn = document.createElement('span');
+    closeBtn.className = 'close-gallery';
+    closeBtn.innerHTML = '&times;';
+    
+    overlay.appendChild(overlayImg);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+    
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        overlayImg.src = img.src;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    closeBtn.addEventListener('click', () => {
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close with ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
+  <script src="./dark-mode.js"></script>
+</body>
+</html>
